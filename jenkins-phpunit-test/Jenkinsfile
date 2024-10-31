@@ -15,10 +15,10 @@ pipeline {
         }
         stage('Test') {
             steps {
-        dir('jenkins-phpunit-test') { // Ensure you're in the correct directory
-            sh './vendor/bin/phpunit tests'
-        }
+                dir('jenkins-phpunit-test') { // Ensure you're in the correct directory
+                    sh './vendor/bin/phpunit tests'
+                }
+            }
         }
     }
-}
-
+} 
